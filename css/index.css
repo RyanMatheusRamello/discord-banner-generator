@@ -1,0 +1,165 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*
+ text: #e7221f;
+ textback: #f33833
+*/
+
+:root {
+    --background: #e72421;
+    --text-color: #f33833;
+}
+
+.form-group {
+    margin-top: 10px;
+}
+
+#preview-center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 15px;
+}
+
+#preview {
+    width: 666px; /* 206px
+     306px */
+    height: 375px;
+    background: var(--background);
+    position: relative;
+    border: solid 1px #000;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif, Arial, Helvetica;
+}
+
+#background-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: var(--backgrond);
+}
+
+#background-triangle {
+    position: absolute;
+    left: -150px;
+    right: 0;
+    top: -150pxpx;
+    bottom: 0;
+    width:330px;
+    height:525px;
+    background:#fff;
+    transform: rotate(25deg);
+    overflow: hidden;
+}
+
+#background-text {
+    position: absolute;
+    left: 70px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 150px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 155px;
+    transform: rotate(-15deg);
+    text-align: center;
+}
+
+#background-text .inverted {
+    display: inline-block;
+    transform: scale(-1, 1);
+}
+
+#center-text {
+    height: 98px;
+    background: transparent;
+    border-top: #fff solid 3px;
+    border-bottom: #fff solid 3px;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 138.5px;
+}
+
+#center-text-div {
+    position: absolute;
+    top: 0;
+    background: #fff;
+    left: 0;
+    right: 60px;
+    bottom: 0;
+    font-size: 85px;
+    line-height: 92px;
+    color: var(--background);
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+#center-text-reverse {
+    height: 98px;
+    border-top: var(--background) solid 3px;
+    border-bottom: var(--background) solid 3px;
+    position: relative;
+    right: 0;
+    width: 400px;
+    top: 282px;
+    transform: rotate(335deg);
+}
+
+#center-text-triangle {
+    border-top: transparent solid 46px;
+    border-bottom: transparent solid 46px;
+    border-left: #fff solid 30px;
+    position: absolute;
+    top: 0;
+    right: 30px;
+}
+
+#center-text-background-triangle {
+    border-top: transparent solid 46px;
+    border-bottom: transparent solid 46px;
+    border-right: var(--background) solid 30px;
+    position: absolute;
+    top: 0;
+    right: 170px;
+}
+
+#center-text-background-complete {
+    position: absolute;
+    left: 230px;
+    right: 0;
+    height: 92px;
+    background: var(--background);
+}
+
+#anime-girl {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    height: 375px;
+    width: 350px;
+    resize: both;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#form-generator {
+    padding-top: 25px;
+}
+
+.selector-resize {
+    background: blue;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border-radius: 50%;
+}
